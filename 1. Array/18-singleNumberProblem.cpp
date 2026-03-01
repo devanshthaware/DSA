@@ -122,6 +122,19 @@ int singleNumberIIOptimal(vector<int> &nums)
     return result;
 }
 
+// Even more optimal (advance bit) - O(n)
+// uses two variables instead of 32 loops
+int singleNumberIIMoreOptimal(vector<int> &nums)
+{
+    int ones = 0, twos = 0;
+    for (int num : nums)
+    {
+        ones = (ones ^ num) & ~twos;
+        twos = (twos ^ num) & ~ones;
+    }
+    return ones;
+}
+
 int main()
 {
     ios::sync_with_stdio(false);
