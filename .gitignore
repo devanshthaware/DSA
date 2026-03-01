@@ -1,0 +1,41 @@
+# Ignore build artifacts and editor directories
+
+# Executables and object files
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.exe.stackdump
+
+# Build directories
+/build/
+/bin/
+/Debug/
+/Release/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Misc
+.idea/
+*.user
+*.suo
+.vs/
