@@ -82,7 +82,7 @@ int nextGap(int gap)
         return 0;
     return (gap / 2) + (gap % 2);
 }
-void merge(long long arr1[], long long arr2[], int n, int m)
+void mergeOptimal(long long arr1[], long long arr2[], int n, int m)
 {
     int gap = nextGap(n + m);
     while (gap > 0)
