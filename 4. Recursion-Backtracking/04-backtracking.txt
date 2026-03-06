@@ -1,0 +1,14 @@
+Backtracking
+backtracking is a recursive algorithmic technique for solving problem incrementally, building candidates and removing solutions that fail to satisfy constraints (i.e, backtrack)
+
+it's like exploring all the paths in a decision tree and "backtracking" when a path doesn't lead to a solution
+
+you can think of it like:
+    go down one path
+    if it work -> continue
+    if it doesn't -> backward (undo the last step) and try another option
+    
+its often used in:
+    generating all combinations/subsets
+    solving constraint satisfaction problems (like sudoku, N-Queens)
+    finding all possible solutions (like permutaions, subsets)
