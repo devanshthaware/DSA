@@ -11,6 +11,8 @@ using namespace std;
 // move to the next index
 // when you reach the end, print the current subset
 // backtrack (remove last added element) to explore other branches
+// time complexity -> there are 2^n subsets -> for each element,
+// so, O(2^n * n) -> n is for printing each subset (can be up to length n)
 void printSubset(int index, vector<int> &arr, vector<int> &subset)
 {
     if (index == arr.size())
